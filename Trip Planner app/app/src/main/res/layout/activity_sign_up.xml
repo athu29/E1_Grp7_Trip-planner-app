@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:elevation="2dp"
+        android:fontFamily="monospace"
+        android:text="Trip Planner"
+        android:textColor="@color/teal_700"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/mailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="monospace"
+        android:hint="Enter Mail"
+        android:text="iyengar.sairam18@siesgst.ac.in"
+        android:textColor="@color/teal_700"
+        android:textColorHint="@color/teal_200"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="monospace"
+        android:hint="Enter Name"
+        android:text="Iyengar Sairam"
+        android:textColor="@color/teal_700"
+        android:textColorHint="@color/teal_200"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <EditText
+        android:id="@+id/phoneText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="monospace"
+        android:hint="Enter Phone"
+        android:inputType="numberSigned"
+        android:text="9898989898"
+        android:textColor="@color/teal_700"
+        android:textColorHint="@color/teal_200"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mailText" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="monospace"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:text="123456789"
+        android:textColor="@color/teal_700"
+        android:textColorHint="@color/teal_200"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneText" />
+
+    <EditText
+        android:id="@+id/passwordText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="monospace"
+        android:hint="ReEnter Password"
+        android:inputType="textPassword"
+        android:text="123456789"
+        android:textColor="@color/teal_700"
+        android:textColorHint="@color/teal_200"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton">
+
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_corner"
+            android:onClick="signUpUser"
+            android:text="Sign Up"
+            android:textColor="@color/teal_700"
+            android:textSize="18sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/button_corner"
+            android:onClick="toMainActivity"
+            android:text="Home Page"
+            android:textColor="@color/teal_700"
+            android:textSize="18sp"
+            app:backgroundTint="@null" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/ageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:hint="Enter Age"
+        android:inputType="numberSigned"
+        android:text="10"
+        android:textColor="@color/teal_700"
+        android:textColorHint="@color/teal_200"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText2" />
+
+    <Button
+        android:id="@+id/imageButton"
+        android:onClick="uploadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_corner"
+        android:text="Upload Image"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageText" />
+
+    <ProgressBar
+        android:id="@+id/signUpProgressBar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/uploadImageStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="monospace"
+        android:text="Not Uploaded"
+        android:textColor="#f22322"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/ageText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    #23f322-->

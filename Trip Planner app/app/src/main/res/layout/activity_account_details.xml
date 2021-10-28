@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    
+    android:layout_height="match_parent"
+    tools:context=".AccountDetails">
+
+    <ImageView
+        android:id="@+id/accountImage"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_baseline_account_circle_24"
+
+         />
+
+    <EditText
+        android:id="@+id/nameAccountText"
+        android:background="@null"
+        android:fontFamily="monospace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Chinnaswamy Iyer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountImage"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/teal_700"
+        android:textSize="22sp"
+        />
+
+    <EditText
+        android:id="@+id/currentTripNameAccounDetails"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:text="Thane mera ghar forever"
+        android:textColor="@color/teal_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageAccountText" />
+
+    <EditText
+        android:id="@+id/mailAccountText"
+        android:textSize="22sp"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textEmailAddress"
+        android:fontFamily="monospace"
+        android:text="iyer.chinnaswamy@gmail.com"
+        android:textColor="@color/teal_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameAccountText" />
+
+    <EditText
+        android:id="@+id/phoneAccountText"
+        android:fontFamily="monospace"
+        android:textSize="22sp"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="95942913333 😁"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/teal_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mailAccountText" />
+
+
+    <EditText
+        android:id="@+id/ageAccountText"
+        android:background="@null"
+        android:fontFamily="monospace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="numberSigned"
+        android:text="Age is just a number"
+        android:textColor="@color/teal_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneAccountText" />
+
+    <EditText
+        android:id="@+id/tripCompletedCountAccountDetails"
+        android:fontFamily="monospace"
+        android:background="@null"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingRight="20dp"
+        android:inputType="numberSigned"
+        android:text="Mummy Bahar ghumne nhi deti so no trips"
+        android:textColor="@color/teal_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentTripNameAccounDetails" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+
+        <ImageButton
+            android:id="@+id/listView"
+            android:onClick="toHomePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginRight="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_700"
+            android:background="@drawable/button_style"
+            app:srcCompat="@drawable/ic_baseline_featured_play_list_24" />
+
+        <ImageButton
+            android:layout_marginLeft="-4dp"
+            android:id="@+id/accountDetailsView"
+            android:layout_width="wrap_content"
+            android:backgroundTint="@color/teal_700"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_style"
+            app:srcCompat="@drawable/ic_baseline_account_circle_24_white" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
