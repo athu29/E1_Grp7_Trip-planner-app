@@ -1,0 +1,2 @@
+# E1_Grp7_Trip-planner-app
+AADL PROJECT (118A3009 , 118A3011 , 118A3018)
